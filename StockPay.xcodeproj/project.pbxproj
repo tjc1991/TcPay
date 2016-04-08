@@ -13,13 +13,13 @@
 		1846A7EC1CB795800004CA51 /* TcHistoryApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846A7EB1CB795800004CA51 /* TcHistoryApi.m */; };
 		1846A7F01CB796A60004CA51 /* TcHistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846A7EF1CB796A60004CA51 /* TcHistoryModel.m */; };
 		1846A7F31CB796BC0004CA51 /* TcStockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846A7F21CB796BC0004CA51 /* TcStockModel.m */; };
+		1846A7F61CB805840004CA51 /* jpush-ios-2.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846A7F51CB805840004CA51 /* jpush-ios-2.1.0.a */; };
 		18F34D7F1CAB548A0044ECC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D7E1CAB548A0044ECC9 /* Foundation.framework */; };
 		18F34D811CAB549B0044ECC9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D801CAB549B0044ECC9 /* CoreTelephony.framework */; };
 		18F34D851CAB54DF0044ECC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D841CAB54DF0044ECC9 /* SystemConfiguration.framework */; };
 		18F34D881CAB6F310044ECC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D871CAB6F310044ECC9 /* CoreLocation.framework */; };
 		18F34D8A1CAB7ADC0044ECC9 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D891CAB7ADC0044ECC9 /* libz.1.1.3.tbd */; };
 		18F34D8E1CAB80620044ECC9 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D8D1CAB80620044ECC9 /* AdSupport.framework */; };
-		18F34D911CAB94F60044ECC9 /* jpush-ios-2.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D901CAB94F60044ECC9 /* jpush-ios-2.1.0.a */; };
 		18F34D951CABA6190044ECC9 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18F34D921CABA6190044ECC9 /* AlipaySDK.bundle */; };
 		18F34D961CABA6190044ECC9 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D931CABA6190044ECC9 /* AlipaySDK.framework */; };
 		18F34D971CABA6190044ECC9 /* BmobPay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D941CABA6190044ECC9 /* BmobPay.framework */; };
@@ -129,6 +129,8 @@
 		1846A7EF1CB796A60004CA51 /* TcHistoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcHistoryModel.m; sourceTree = "<group>"; };
 		1846A7F11CB796BC0004CA51 /* TcStockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcStockModel.h; sourceTree = "<group>"; };
 		1846A7F21CB796BC0004CA51 /* TcStockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcStockModel.m; sourceTree = "<group>"; };
+		1846A7F41CB805840004CA51 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPUSHService.h; path = others/JPUSHService.h; sourceTree = "<group>"; };
+		1846A7F51CB805840004CA51 /* jpush-ios-2.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "jpush-ios-2.1.0.a"; path = "others/jpush-ios-2.1.0.a"; sourceTree = "<group>"; };
 		1865E1511CAA895A00A850BA /* StockPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F34D7E1CAB548A0044ECC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18F34D801CAB549B0044ECC9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -138,8 +140,6 @@
 		18F34D891CAB7ADC0044ECC9 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
 		18F34D8B1CAB80100044ECC9 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		18F34D8D1CAB80620044ECC9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		18F34D8F1CAB94F60044ECC9 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPUSHService.h; path = "../../../../../../Downloads/JPush-iOS-SDK-2.1.0/lib/JPUSHService.h"; sourceTree = "<group>"; };
-		18F34D901CAB94F60044ECC9 /* jpush-ios-2.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "jpush-ios-2.1.0.a"; path = "../../../../../../Downloads/JPush-iOS-SDK-2.1.0/lib/jpush-ios-2.1.0.a"; sourceTree = "<group>"; };
 		18F34D921CABA6190044ECC9 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		18F34D931CABA6190044ECC9 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		18F34D941CABA6190044ECC9 /* BmobPay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobPay.framework; sourceTree = "<group>"; };
@@ -269,11 +269,11 @@
 				18F34D8E1CAB80620044ECC9 /* AdSupport.framework in Frameworks */,
 				18F34D961CABA6190044ECC9 /* AlipaySDK.framework in Frameworks */,
 				18F34D8A1CAB7ADC0044ECC9 /* libz.1.1.3.tbd in Frameworks */,
+				1846A7F61CB805840004CA51 /* jpush-ios-2.1.0.a in Frameworks */,
 				18F34D881CAB6F310044ECC9 /* CoreLocation.framework in Frameworks */,
 				18F34D851CAB54DF0044ECC9 /* SystemConfiguration.framework in Frameworks */,
 				18F34D811CAB549B0044ECC9 /* CoreTelephony.framework in Frameworks */,
 				18F34D7F1CAB548A0044ECC9 /* Foundation.framework in Frameworks */,
-				18F34D911CAB94F60044ECC9 /* jpush-ios-2.1.0.a in Frameworks */,
 				18F34D971CABA6190044ECC9 /* BmobPay.framework in Frameworks */,
 				3FA4C312556AC8AC58F3A0B9 /* libPods.a in Frameworks */,
 			);
@@ -355,6 +355,8 @@
 				18F34D7A1CAAA56E0044ECC9 /* others */,
 				18F34DC01CABC7440044ECC9 /* Info.plist */,
 				18F34DC21CABC7440044ECC9 /* main.m */,
+				1846A7F41CB805840004CA51 /* JPUSHService.h */,
+				1846A7F51CB805840004CA51 /* jpush-ios-2.1.0.a */,
 				18F34DE41CABD2360044ECC9 /* stockpay.pch */,
 				18F34E8A1CAE38650044ECC9 /* TcConfig.h */,
 			);
@@ -365,8 +367,6 @@
 			isa = PBXGroup;
 			children = (
 				18F34E7E1CAE355A0044ECC9 /* SMS_SDK */,
-				18F34D8F1CAB94F60044ECC9 /* JPUSHService.h */,
-				18F34D901CAB94F60044ECC9 /* jpush-ios-2.1.0.a */,
 			);
 			path = others;
 			sourceTree = "<group>";
