@@ -73,15 +73,18 @@
             [defaults setObject:[[responseObject objectForKey:@"data"] objectForKey:@"userid"] forKey:NSUSERDEFAULT_USERID];
             [defaults synchronize];
             
-            //跳转
-            MainViewController *mainVcl = [[MainViewController alloc] init];
-            [self presentViewController:mainVcl animated:YES completion:nil];
+            self.view.window.rootViewController = [[MainViewController alloc]init];
+            
+            //销毁当前控制器
+            [self dismissViewControllerAnimated:YES completion:nil];
+            
         }else{
             
             [self MakeToast:@"登录失败!"];
         }
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"err-->%@",error);
         [self MakeToast:@"登录失败!"];
     }];
 
@@ -93,6 +96,10 @@
     TcRegisterViewController *regVcl = [[TcRegisterViewController alloc]init];
     [self presentViewController:regVcl animated:YES completion:nil];
 
+}
+
+-(void)dealloc{
+    NSLog(@"TcLoginViewController--->dealloc");
 }
 
 

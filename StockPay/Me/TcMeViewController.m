@@ -8,6 +8,7 @@
 
 #import "TcMeViewController.h"
 #import "TcLoginViewController.h"
+#import "BaseNavigationViewController.h"
 
 @interface TcMeViewController ()
 
@@ -31,7 +32,11 @@
 
 - (IBAction)logOutAction:(id)sender {
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    //清除NSUserDefault
+    [[NSUserDefaults standardUserDefaults]removeObjectForKey:NSUSERDEFAULT_USERID];
+    //跳转到登陆界面
+    TcLoginViewController *login = [[TcLoginViewController alloc]init];
+    [self presentViewController:login animated:YES completion:nil];
     
 }
 

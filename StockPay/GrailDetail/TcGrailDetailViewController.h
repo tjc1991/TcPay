@@ -8,6 +8,10 @@
 
 #import "TcBaseViewController.h"
 
-@interface TcGrailDetailViewController : TcBaseViewController
+@interface TcGrailDetailViewController : TcBaseViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableview;
+
+@property(nonatomic,strong) NSMutableArray *data;
 
 @end

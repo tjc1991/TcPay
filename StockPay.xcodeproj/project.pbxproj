@@ -14,6 +14,25 @@
 		1846A7F01CB796A60004CA51 /* TcHistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846A7EF1CB796A60004CA51 /* TcHistoryModel.m */; };
 		1846A7F31CB796BC0004CA51 /* TcStockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846A7F21CB796BC0004CA51 /* TcStockModel.m */; };
 		1846A7F61CB805840004CA51 /* jpush-ios-2.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846A7F51CB805840004CA51 /* jpush-ios-2.1.0.a */; };
+		1846A7F81CB80A160004CA51 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846A7F71CB80A160004CA51 /* libAFNetworking.a */; };
+		1846A7FC1CB8C7150004CA51 /* NSDate+TimeCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846A7FB1CB8C7150004CA51 /* NSDate+TimeCategory.m */; };
+		1846A8001CB8D0600004CA51 /* TcHistoryCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846A7FF1CB8D0600004CA51 /* TcHistoryCellTableViewCell.m */; };
+		1846A8031CB8D3970004CA51 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846A8021CB8D3970004CA51 /* UIViewExt.m */; };
+		1846A8061CB8EFAE0004CA51 /* tbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8041CB8EFAE0004CA51 /* tbg.png */; };
+		1846A8071CB8EFAE0004CA51 /* tbg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8051CB8EFAE0004CA51 /* tbg@2x.png */; };
+		1846A80A1CB913E10004CA51 /* tbl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8081CB913E10004CA51 /* tbl.png */; };
+		1846A80B1CB913E10004CA51 /* tbl@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8091CB913E10004CA51 /* tbl@2x.png */; };
+		1846A80D1CB93E9C0004CA51 /* hot_ringtone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A80C1CB93E9C0004CA51 /* hot_ringtone.png */; };
+		1846A82C1CB946FE0004CA51 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8221CB946FE0004CA51 /* 1.png */; };
+		1846A82D1CB946FE0004CA51 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8231CB946FE0004CA51 /* 2.png */; };
+		1846A82E1CB946FE0004CA51 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8241CB946FE0004CA51 /* 3.png */; };
+		1846A82F1CB946FE0004CA51 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8251CB946FE0004CA51 /* 4.png */; };
+		1846A8301CB946FE0004CA51 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8261CB946FE0004CA51 /* 5.png */; };
+		1846A8311CB946FE0004CA51 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8271CB946FE0004CA51 /* 6.png */; };
+		1846A8321CB946FE0004CA51 /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8281CB946FE0004CA51 /* 7.png */; };
+		1846A8331CB946FE0004CA51 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8291CB946FE0004CA51 /* 8.png */; };
+		1846A8341CB946FE0004CA51 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A82A1CB946FE0004CA51 /* 9.png */; };
+		1846A8351CB946FE0004CA51 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A82B1CB946FE0004CA51 /* 10.png */; };
 		18F34D7F1CAB548A0044ECC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D7E1CAB548A0044ECC9 /* Foundation.framework */; };
 		18F34D811CAB549B0044ECC9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D801CAB549B0044ECC9 /* CoreTelephony.framework */; };
 		18F34D851CAB54DF0044ECC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D841CAB54DF0044ECC9 /* SystemConfiguration.framework */; };
@@ -131,6 +150,28 @@
 		1846A7F21CB796BC0004CA51 /* TcStockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcStockModel.m; sourceTree = "<group>"; };
 		1846A7F41CB805840004CA51 /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JPUSHService.h; path = others/JPUSHService.h; sourceTree = "<group>"; };
 		1846A7F51CB805840004CA51 /* jpush-ios-2.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "jpush-ios-2.1.0.a"; path = "others/jpush-ios-2.1.0.a"; sourceTree = "<group>"; };
+		1846A7F71CB80A160004CA51 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
+		1846A7FA1CB8C7150004CA51 /* NSDate+TimeCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+TimeCategory.h"; sourceTree = "<group>"; };
+		1846A7FB1CB8C7150004CA51 /* NSDate+TimeCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+TimeCategory.m"; sourceTree = "<group>"; };
+		1846A7FE1CB8D0600004CA51 /* TcHistoryCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcHistoryCellTableViewCell.h; sourceTree = "<group>"; };
+		1846A7FF1CB8D0600004CA51 /* TcHistoryCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcHistoryCellTableViewCell.m; sourceTree = "<group>"; };
+		1846A8011CB8D3970004CA51 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		1846A8021CB8D3970004CA51 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		1846A8041CB8EFAE0004CA51 /* tbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tbg.png; sourceTree = "<group>"; };
+		1846A8051CB8EFAE0004CA51 /* tbg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tbg@2x.png"; sourceTree = "<group>"; };
+		1846A8081CB913E10004CA51 /* tbl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tbl.png; sourceTree = "<group>"; };
+		1846A8091CB913E10004CA51 /* tbl@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tbl@2x.png"; sourceTree = "<group>"; };
+		1846A80C1CB93E9C0004CA51 /* hot_ringtone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hot_ringtone.png; sourceTree = "<group>"; };
+		1846A8221CB946FE0004CA51 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		1846A8231CB946FE0004CA51 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		1846A8241CB946FE0004CA51 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		1846A8251CB946FE0004CA51 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		1846A8261CB946FE0004CA51 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		1846A8271CB946FE0004CA51 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		1846A8281CB946FE0004CA51 /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		1846A8291CB946FE0004CA51 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		1846A82A1CB946FE0004CA51 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		1846A82B1CB946FE0004CA51 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
 		1865E1511CAA895A00A850BA /* StockPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F34D7E1CAB548A0044ECC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18F34D801CAB549B0044ECC9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -257,6 +298,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1846A7F81CB80A160004CA51 /* libAFNetworking.a in Frameworks */,
 				18F34E8E1CAE63E80044ECC9 /* QuartzCore.framework in Frameworks */,
 				18F34E891CAE35D50044ECC9 /* libicucore.tbd in Frameworks */,
 				18F34E881CAE35C30044ECC9 /* libstdc++.tbd in Frameworks */,
@@ -306,6 +348,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1846A7F91CB8C6A80004CA51 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				1846A7FA1CB8C7150004CA51 /* NSDate+TimeCategory.h */,
+				1846A7FB1CB8C7150004CA51 /* NSDate+TimeCategory.m */,
+				1846A8011CB8D3970004CA51 /* UIViewExt.h */,
+				1846A8021CB8D3970004CA51 /* UIViewExt.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		1846A7FD1CB8D01E0004CA51 /* customCell */ = {
+			isa = PBXGroup;
+			children = (
+				1846A7FE1CB8D0600004CA51 /* TcHistoryCellTableViewCell.h */,
+				1846A7FF1CB8D0600004CA51 /* TcHistoryCellTableViewCell.m */,
+			);
+			path = customCell;
+			sourceTree = "<group>";
+		};
 		1865E1481CAA895A00A850BA = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +390,7 @@
 		1865E1531CAA895A00A850BA /* StockPay */ = {
 			isa = PBXGroup;
 			children = (
+				1846A7FD1CB8D01E0004CA51 /* customCell */,
 				1846A7ED1CB7966E0004CA51 /* Model */,
 				1846A7E01CB6B1130004CA51 /* Api */,
 				18F34DCF1CABC8950044ECC9 /* Base */,
@@ -351,6 +414,7 @@
 		1865E1541CAA895A00A850BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1846A7F91CB8C6A80004CA51 /* category */,
 				18F34DE51CABD5B30044ECC9 /* images */,
 				18F34D7A1CAAA56E0044ECC9 /* others */,
 				18F34DC01CABC7440044ECC9 /* Info.plist */,
@@ -460,6 +524,21 @@
 		18F34DE51CABD5B30044ECC9 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1846A8221CB946FE0004CA51 /* 1.png */,
+				1846A8231CB946FE0004CA51 /* 2.png */,
+				1846A8241CB946FE0004CA51 /* 3.png */,
+				1846A8251CB946FE0004CA51 /* 4.png */,
+				1846A8261CB946FE0004CA51 /* 5.png */,
+				1846A8271CB946FE0004CA51 /* 6.png */,
+				1846A8281CB946FE0004CA51 /* 7.png */,
+				1846A8291CB946FE0004CA51 /* 8.png */,
+				1846A82A1CB946FE0004CA51 /* 9.png */,
+				1846A82B1CB946FE0004CA51 /* 10.png */,
+				1846A80C1CB93E9C0004CA51 /* hot_ringtone.png */,
+				1846A8081CB913E10004CA51 /* tbl.png */,
+				1846A8091CB913E10004CA51 /* tbl@2x.png */,
+				1846A8041CB8EFAE0004CA51 /* tbg.png */,
+				1846A8051CB8EFAE0004CA51 /* tbg@2x.png */,
 				18F34E721CAD134F0044ECC9 /* icon_close_nor@2x.png */,
 				18F34E731CAD134F0044ECC9 /* icon_close_nor@3x.png */,
 				18F34E741CAD134F0044ECC9 /* icon_close_pre@2x.png */,
@@ -534,6 +613,7 @@
 		21209FC26F3CC8995236D33A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1846A7F71CB80A160004CA51 /* libAFNetworking.a */,
 				18F34E8D1CAE63E80044ECC9 /* QuartzCore.framework */,
 				C79EFC1B0747381A8903923F /* libPods.a */,
 			);
@@ -624,12 +704,14 @@
 				18F34E281CACC7AA0044ECC9 /* icon_message_pre@2x.png in Resources */,
 				18F34E221CACC7AA0044ECC9 /* icon_home_pre@2x.png in Resources */,
 				18F34E491CACCC580044ECC9 /* TcStockViewController.xib in Resources */,
+				1846A8311CB946FE0004CA51 /* 6.png in Resources */,
 				18F34DF21CABD6130044ECC9 /* btn_red_normal@2x.png in Resources */,
 				18F34DF01CABD6130044ECC9 /* btn_login_normal@2x.png in Resources */,
 				18F34DC81CABC7440044ECC9 /* LaunchScreen.storyboard in Resources */,
 				18F34DF41CABD6130044ECC9 /* btn_register_normal@2x.png in Resources */,
 				18F34E231CACC7AA0044ECC9 /* icon_home_pre@3x.png in Resources */,
 				18F34DF61CABD6130044ECC9 /* icon_backa@2x.png in Resources */,
+				1846A82D1CB946FE0004CA51 /* 2.png in Resources */,
 				18F34E591CACEA060044ECC9 /* icon_pm_head@3x.png in Resources */,
 				18F34E511CACE8470044ECC9 /* icon_headimge_placeholder.png in Resources */,
 				18F34E251CACC7AA0044ECC9 /* icon_message_nor@2x.png in Resources */,
@@ -637,11 +719,15 @@
 				18F34E6E1CAD12CF0044ECC9 /* icon_banner_close_nor@2x.png in Resources */,
 				18F34E701CAD12CF0044ECC9 /* icon_banner_close_selected@2x.png in Resources */,
 				18F34E5F1CAD12380044ECC9 /* icon_communicate_back.png in Resources */,
+				1846A80D1CB93E9C0004CA51 /* hot_ringtone.png in Resources */,
 				18F34E5B1CAD05650044ECC9 /* launchLSY.png in Resources */,
+				1846A82F1CB946FE0004CA51 /* 4.png in Resources */,
+				1846A8331CB946FE0004CA51 /* 8.png in Resources */,
 				18F34DF11CABD6130044ECC9 /* btn_login_pressed@2x.png in Resources */,
 				18F34E321CACC7AA0044ECC9 /* icon_username@2x.png in Resources */,
 				18F34E671CAD127B0044ECC9 /* icon_back_nor.png in Resources */,
 				18F34E7C1CAD134F0044ECC9 /* icon_close@2x.png in Resources */,
+				1846A8061CB8EFAE0004CA51 /* tbg.png in Resources */,
 				18F34E581CACEA060044ECC9 /* icon_pm_head@2x.png in Resources */,
 				18F34DF81CABD6130044ECC9 /* login_background@2x.png in Resources */,
 				18F34DF51CABD6130044ECC9 /* btn_register_pressed@2x.png in Resources */,
@@ -651,13 +737,16 @@
 				18F34DF91CABD6130044ECC9 /* start_bg@2x.png in Resources */,
 				18F34E311CACC7AA0044ECC9 /* icon_username_select@3x.png in Resources */,
 				18F34E7A1CAD134F0044ECC9 /* icon_close_pre@2x.png in Resources */,
+				1846A80A1CB913E10004CA51 /* tbl.png in Resources */,
 				18F34E471CACCA070044ECC9 /* TcForgetPwdViewController.xib in Resources */,
 				18F34E2C1CACC7AA0044ECC9 /* icon_setting_nor@3x.png in Resources */,
 				18F34E531CACE8470044ECC9 /* icon_headimge_placeholder@3x.png in Resources */,
 				18F34E2E1CACC7AA0044ECC9 /* icon_setting_pre@2x.png in Resources */,
 				18F34E7D1CAD134F0044ECC9 /* icon_close@3x.png in Resources */,
 				18F34DC71CABC7440044ECC9 /* Info.plist in Resources */,
+				1846A82E1CB946FE0004CA51 /* 3.png in Resources */,
 				18F34E681CAD127B0044ECC9 /* icon_back_nor@2x.png in Resources */,
+				1846A8321CB946FE0004CA51 /* 7.png in Resources */,
 				18F34E4D1CACE8110044ECC9 /* setting_head_bg.jpg in Resources */,
 				18F34E381CACC99A0044ECC9 /* TcMeViewController.xib in Resources */,
 				18F34E611CAD123E0044ECC9 /* icon_communicate_back@2x.png in Resources */,
@@ -667,13 +756,17 @@
 				18F34E201CACC7AA0044ECC9 /* icon_home_nor@3x.png in Resources */,
 				18F34E271CACC7AA0044ECC9 /* icon_message_pre.png in Resources */,
 				18F34E211CACC7AA0044ECC9 /* icon_home_pre.png in Resources */,
+				1846A80B1CB913E10004CA51 /* tbl@2x.png in Resources */,
 				18F34E2D1CACC7AA0044ECC9 /* icon_setting_pre.png in Resources */,
+				1846A8351CB946FE0004CA51 /* 10.png in Resources */,
 				18F34E2B1CACC7AA0044ECC9 /* icon_setting_nor@2x.png in Resources */,
 				18F34DFB1CABD9830044ECC9 /* tittleNavigation@2x.png in Resources */,
 				18F34DF31CABD6130044ECC9 /* btn_red_pressed@2x.png in Resources */,
 				18F34E711CAD12CF0044ECC9 /* icon_banner_close_selected@3x.png in Resources */,
 				18F34E1F1CACC7AA0044ECC9 /* icon_home_nor@2x.png in Resources */,
 				18F34D951CABA6190044ECC9 /* AlipaySDK.bundle in Resources */,
+				1846A8301CB946FE0004CA51 /* 5.png in Resources */,
+				1846A8341CB946FE0004CA51 /* 9.png in Resources */,
 				18F34DF71CABD6130044ECC9 /* icon_backb@2x.png in Resources */,
 				18F34E631CAD12420044ECC9 /* icon_communicate_back@3x.png in Resources */,
 				18F34E521CACE8470044ECC9 /* icon_headimge_placeholder@2x.png in Resources */,
@@ -684,8 +777,10 @@
 				18F34E2A1CACC7AA0044ECC9 /* icon_setting_nor.png in Resources */,
 				18F34E331CACC7AA0044ECC9 /* icon_username@3x.png in Resources */,
 				18F34E3D1CACC9D70044ECC9 /* TcLoginViewController.xib in Resources */,
+				1846A8071CB8EFAE0004CA51 /* tbg@2x.png in Resources */,
 				18F34E261CACC7AA0044ECC9 /* icon_message_nor@3x.png in Resources */,
 				18F34E791CAD134F0044ECC9 /* icon_close_nor@3x.png in Resources */,
+				1846A82C1CB946FE0004CA51 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,13 +850,16 @@
 				18F34DE01CABCDB10044ECC9 /* TcStockViewController.m in Sources */,
 				1846A7F31CB796BC0004CA51 /* TcStockModel.m in Sources */,
 				18F34DC91CABC7440044ECC9 /* main.m in Sources */,
+				1846A8031CB8D3970004CA51 /* UIViewExt.m in Sources */,
 				18F34DCB1CABC7440044ECC9 /* ViewController.m in Sources */,
 				1846A7E91CB78AB60004CA51 /* TcRecordApi.m in Sources */,
+				1846A8001CB8D0600004CA51 /* TcHistoryCellTableViewCell.m in Sources */,
 				1846A7F01CB796A60004CA51 /* TcHistoryModel.m in Sources */,
 				18F34DFE1CABD9B30044ECC9 /* BaseNavigationViewController.m in Sources */,
 				18F34E3C1CACC9D70044ECC9 /* TcLoginViewController.m in Sources */,
 				1846A7EC1CB795800004CA51 /* TcHistoryApi.m in Sources */,
 				18F34E371CACC99A0044ECC9 /* TcMeViewController.m in Sources */,
+				1846A7FC1CB8C7150004CA51 /* NSDate+TimeCategory.m in Sources */,
 				18F34D9F1CABB5FF0044ECC9 /* TcPushManager.m in Sources */,
 				1846A7E31CB6B14A0004CA51 /* TcBaseApi.m in Sources */,
 			);
@@ -810,7 +908,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -849,7 +947,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -875,8 +973,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/StockPay/others",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -918,8 +1017,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/StockPay/others",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

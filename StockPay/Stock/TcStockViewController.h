@@ -8,7 +8,11 @@
 
 #import "TcBaseViewController.h"
 
-@interface TcStockViewController : TcBaseViewController
+@interface TcStockViewController : TcBaseViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableview;
+
+@property(nonatomic,strong) NSMutableArray *data;
 
 
 @end

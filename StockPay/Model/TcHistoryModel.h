@@ -15,7 +15,10 @@
 //消息ID
 @property(nonatomic,assign) NSUInteger rdid;
 //时间
-@property(nonatomic,copy) NSNumber *createtime;
+@property(nonatomic,copy) NSString *createtime;
+
+@property(nonatomic,copy) NSString *content;
+
 
 
 @end

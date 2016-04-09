@@ -10,6 +10,7 @@
 #define stockpay_pch
 
 #import "TcConfig.h"
+#import "UIViewExt.h"
 
 
 //通知

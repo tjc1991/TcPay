@@ -27,21 +27,25 @@
 
 - (void)showDialog:(NSString*)msg{
     [SVProgressHUD setMinimumDismissTimeInterval:1.0f];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD showWithStatus:msg];
 }
 
 - (void)closeDialog:(BOOL)isSuccess withHint:(NSString*)msg{
     [SVProgressHUD setMinimumDismissTimeInterval:1.0f];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD dismiss];
 }
 
 - (void)MakeToast:(NSString*)hint{
     [SVProgressHUD setMinimumDismissTimeInterval:1.0f];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD showErrorWithStatus:hint];
 }
 
 - (void)MakeSuccessToast:(NSString*)hint{
     [SVProgressHUD setMinimumDismissTimeInterval:1.0f];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     [SVProgressHUD showSuccessWithStatus:hint];
 }
 

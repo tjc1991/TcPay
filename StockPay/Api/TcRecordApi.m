@@ -20,6 +20,14 @@
     
 }
 
+- (void) fetchAllRecord: (NSInteger)page :(successBlock)success :(failBlock)fail{
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:2];
+    [params setObject:[NSNumber numberWithInteger:page] forKey:@"p"];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:API_FETCH_ALL_RECORD_URL parameters:params success:success failure:fail];
+}
+
 
 
 @end

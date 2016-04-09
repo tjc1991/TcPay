@@ -194,5 +194,9 @@
     }
 }
 
+-(void)dealloc{
+    NSLog(@"MainViewController-->dealloc");
+}
+
 
 @end

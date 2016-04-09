@@ -10,7 +10,11 @@
 
 @interface TcRecordApi : TcBaseApi
 
+//查询单条用户数据
 - (void) fetchOneRecord: (NSUInteger)rdId :(successBlock)success :(failBlock)fail;
+
+//查询所有推荐股票数据,分页
+- (void) fetchAllRecord: (NSInteger)page :(successBlock)success :(failBlock)fail;
 
 
 @end

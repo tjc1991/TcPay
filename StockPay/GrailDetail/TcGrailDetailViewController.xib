@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TcGrailDetailViewController">
             <connections>
+                <outlet property="tableview" destination="z8C-9l-N9q" id="gNO-lp-3cd"/>
                 <outlet property="view" destination="iN0-l3-epB" id="ORN-PV-Jgb"/>
             </connections>
         </placeholder>
@@ -15,10 +16,14 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z8C-9l-N9q">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="z8C-9l-N9q">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5yx-fG-IsK"/>
+                        <outlet property="delegate" destination="-1" id="c8K-XA-DUb"/>
+                    </connections>
                 </tableView>
             </subviews>
             <animations/>
@@ -51,6 +56,7 @@
                     <include reference="yct-ZT-Ih0"/>
                 </mask>
             </variation>
+            <point key="canvasLocation" x="304" y="135"/>
         </view>
     </objects>
 </document>

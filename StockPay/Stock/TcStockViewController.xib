@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TcStockViewController">
             <connections>
+                <outlet property="tableview" destination="czV-HW-gDF" id="SFW-CN-okP"/>
                 <outlet property="view" destination="iN0-l3-epB" id="WIH-3J-wGV"/>
             </connections>
         </placeholder>
@@ -19,6 +20,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="GIL-Ek-1vt"/>
+                        <outlet property="delegate" destination="-1" id="eXS-Dz-s1l"/>
+                    </connections>
                 </tableView>
             </subviews>
             <animations/>

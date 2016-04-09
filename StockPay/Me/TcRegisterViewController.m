@@ -139,4 +139,8 @@
     
 }
 
+-(void)dealloc{
+    NSLog(@"TcRegisterViewController--->dealloc");
+}
+
 @end
