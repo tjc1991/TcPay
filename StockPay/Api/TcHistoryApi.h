@@ -16,8 +16,11 @@
 //查询用户购买记录
 -(void) fetchHistory: (NSString *)userid :(NSInteger)page :(successBlock)success :(failBlock)fail;
 
-//查询单条用户购买数据
+//查询单条用户购买数据,没有返回详情
 -(void) fetchUserBuy: (NSString *)userid :(NSUInteger)rdid :(successBlock)success :(failBlock)fail;
+
+//查询单条用户购买数据,返回详情
+-(void) fetchUserBuyDetails: (NSString *)userid :(NSUInteger)rdid :(successBlock)success :(failBlock)fail;
 
 
 @end

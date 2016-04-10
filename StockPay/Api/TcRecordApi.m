@@ -28,6 +28,18 @@
     [manager GET:API_FETCH_ALL_RECORD_URL parameters:params success:success failure:fail];
 }
 
+- (void) fetchAllRecord: (NSString *)username :(NSInteger)page :(successBlock)success :(failBlock)fail{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:2];
+    [params setObject:[NSNumber numberWithInteger:page] forKey:@"p"];
+    [params setObject:username forKey:@"username"];
+
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:API_FETCH_ALL_USER_RECORD_URL parameters:params success:success failure:fail];
+
+}
+
 
 
 @end

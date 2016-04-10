@@ -1,31 +1,31 @@
 //
-//  TcGrailDetailViewController.m
+//  TcBuyRecordViewController.m
 //  StockPay
 //
-//  Created by tjc1991 on 16/3/30.
+//  Created by tjc1991 on 16/4/10.
 //  Copyright © 2016年 cldxk. All rights reserved.
 //
 
-#import "TcGrailDetailViewController.h"
+#import "TcBuyRecordViewController.h"
 #import <MJRefresh/MJRefresh.h>
-#import "TcHistoryApi.h"
+#import "TcRecordApi.h"
 #import "NSDate+TimeCategory.h"
 #import "TcHistoryCellTableViewCell.h"
 #import <MJExtension/MJExtension.h>
 
-@interface TcGrailDetailViewController ()
-{
+@interface TcBuyRecordViewController (){
     NSInteger page;
+
 }
 
 @end
 
-@implementation TcGrailDetailViewController
+@implementation TcBuyRecordViewController
 
 -(instancetype)init{
     self = [super init];
     if (self) {
-        self.title = @"行情";
+        self.title = @"我的记录";
         self.data = [NSMutableArray arrayWithCapacity:10];
         page = 1;
     }
@@ -35,11 +35,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    //注册刷新通知
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshData) name:NOTOFY_FRESH_LIST object:nil];
-    
-    [self.tableview setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     
     self.tableview.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         
@@ -62,8 +57,8 @@
 //上拉,获取最新数据
 - (void)pullUp{
     
-    TcHistoryApi *hisToryApi = [[TcHistoryApi alloc]init];
-    [hisToryApi fetchHistory:[[NSUserDefaults standardUserDefaults]objectForKey:NSUSERDEFAULT_USERID] :1 :^(NSURLSessionDataTask *task, id responseObject) {
+    TcRecordApi *recordApi = [[TcRecordApi alloc]init];
+    [recordApi fetchAllRecord:[[NSUserDefaults standardUserDefaults]objectForKey:NSUSERDEFAULT_USERID] :1 :^(NSURLSessionDataTask *task, id responseObject) {
         //停止刷新
         [self endRefresh];
         
@@ -73,7 +68,7 @@
                 NSArray *tmpArray = [responseObject objectForKey:@"data"];
                 if (tmpArray && [tmpArray count]>0) {
                     
-                    //NSLog(@"%@",responseObject);
+                    NSLog(@"%@",responseObject);
                     
                     if ([self.data count] == 0) {
                         //第一次添加数据
@@ -118,8 +113,8 @@
     
     NSLog(@"page =%ld",page);
     
-    TcHistoryApi *hisToryApi = [[TcHistoryApi alloc]init];
-    [hisToryApi fetchHistory:[[NSUserDefaults standardUserDefaults]objectForKey:NSUSERDEFAULT_USERID] :page :^(NSURLSessionDataTask *task, id responseObject) {
+    TcRecordApi *recordApi = [[TcRecordApi alloc]init];
+    [recordApi fetchAllRecord:[[NSUserDefaults standardUserDefaults]objectForKey:NSUSERDEFAULT_USERID] :page :^(NSURLSessionDataTask *task, id responseObject) {
         //停止刷新
         [self endRefresh];
         
@@ -214,20 +209,20 @@
     [tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     UIImage *bubble = [UIImage imageNamed:@"tbg"];
-        cell.backgroundView = [[UIImageView alloc] initWithImage:[bubble stretchableImageWithLeftCapWidth:floorf(bubble.size.width/2) topCapHeight:floorf(bubble.size.height/2)]];
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[bubble stretchableImageWithLeftCapWidth:floorf(bubble.size.width/2) topCapHeight:floorf(bubble.size.height/2)]];
     
     TcHistoryModel *historymodel = [TcHistoryModel mj_objectWithKeyValues:[self.data objectAtIndex:indexPath.row]];
     
     cell.model = historymodel;
     
     return cell;
-
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     TcHistoryModel *historymodel = [TcHistoryModel mj_objectWithKeyValues:[self.data objectAtIndex:indexPath.row]];
-        
+    
     float height = [TcHistoryCellTableViewCell getHistoryHeight:historymodel];
     height += 55;
     return height;
@@ -242,25 +237,5 @@
             break;
     }
 }
-
-#pragma mark Notify
-
-- (void)refreshData{
-    
-    [self.tableview.header beginRefreshing];
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-- (void)dealloc{
-    
-    //移除通知
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:NOTOFY_FRESH_LIST object:nil];
-}
-
 
 @end

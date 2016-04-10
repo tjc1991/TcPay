@@ -31,4 +31,27 @@
     [manager POST:API_REGISTER_URL parameters:params success:success failure:failure];
 }
 
+- (void) ChangeNick: (NSString *)name andNick: (NSString *)pwd success:(successBlock)success
+            failure:(failBlock)failure{
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:2];
+    [params setObject:name forKey:@"username"];
+    [params setObject:pwd forKey:@"nick"];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager POST:API_CHANGE_USER_NICK_URL parameters:params success:success failure:failure];
+}
+
+- (void) ChangePwd: (NSString *)name oldPwd: (NSString *)oldpwd orignPwd: (NSString *)pwd success:(successBlock)success
+            failure:(failBlock)failure{
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:2];
+    [params setObject:name forKey:@"username"];
+    [params setObject:oldpwd forKey:@"oldpwd"];
+    [params setObject:pwd forKey:@"pwd"];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager POST:API_RESET_USER_PWD_URL parameters:params success:success failure:failure];
+}
+
+
+
 @end

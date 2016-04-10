@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TcAboutMeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="YPB-M8-zgM">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="Oe7-Zo-YXp"/>
+                        <constraint firstAttribute="width" constant="120" id="t8c-hM-g2N"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Oe7-Zo-YXp"/>
+                            <exclude reference="t8c-hM-g2N"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Oe7-Zo-YXp"/>
+                            <include reference="t8c-hM-g2N"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="俊溪金融" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2z-Ag-6f2">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="126" id="Uh5-yF-MW9"/>
+                        <constraint firstAttribute="height" constant="20" id="e81-rU-icJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.085813336074352264" green="0.7551233172416687" blue="0.70791167020797729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Uh5-yF-MW9"/>
+                            <exclude reference="e81-rU-icJ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Uh5-yF-MW9"/>
+                            <include reference="e81-rU-icJ"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pK-zU-TV0">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="VZd-mV-9gG"/>
+                        <constraint firstAttribute="width" constant="42" id="zCS-88-Lmc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.52311305379999995" blue="0.24595383830000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="VZd-mV-9gG"/>
+                            <exclude reference="zCS-88-Lmc"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="VZd-mV-9gG"/>
+                            <include reference="zCS-88-Lmc"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专业投资机构,大数据与云计算完美结合" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pk3-PY-FzI">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pk3-PY-FzI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="3cP-Cg-bmE"/>
+                <constraint firstItem="YPB-M8-zgM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="C2n-PX-GAw"/>
+                <constraint firstItem="4pK-zU-TV0" firstAttribute="top" secondItem="w2z-Ag-6f2" secondAttribute="bottom" constant="14" id="FEz-IF-Q3R"/>
+                <constraint firstAttribute="trailing" secondItem="Pk3-PY-FzI" secondAttribute="trailing" constant="30" id="GVo-CB-p0z"/>
+                <constraint firstItem="YPB-M8-zgM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="77" id="LHX-Gn-nZs"/>
+                <constraint firstItem="w2z-Ag-6f2" firstAttribute="top" secondItem="YPB-M8-zgM" secondAttribute="bottom" constant="18" id="TYp-W3-Hyc"/>
+                <constraint firstItem="YPB-M8-zgM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ytj-Yf-D8P"/>
+                <constraint firstItem="w2z-Ag-6f2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dUJ-35-D11"/>
+                <constraint firstItem="Pk3-PY-FzI" firstAttribute="top" secondItem="4pK-zU-TV0" secondAttribute="bottom" constant="30" id="eC6-kI-7Hi"/>
+                <constraint firstItem="4pK-zU-TV0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vPl-vJ-RMG"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="YPB-M8-zgM"/>
+                    <exclude reference="w2z-Ag-6f2"/>
+                    <exclude reference="4pK-zU-TV0"/>
+                    <exclude reference="Pk3-PY-FzI"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="C2n-PX-GAw"/>
+                    <exclude reference="LHX-Gn-nZs"/>
+                    <exclude reference="Ytj-Yf-D8P"/>
+                    <exclude reference="TYp-W3-Hyc"/>
+                    <exclude reference="dUJ-35-D11"/>
+                    <exclude reference="3cP-Cg-bmE"/>
+                    <exclude reference="GVo-CB-p0z"/>
+                    <exclude reference="eC6-kI-7Hi"/>
+                    <exclude reference="FEz-IF-Q3R"/>
+                    <exclude reference="vPl-vJ-RMG"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="YPB-M8-zgM"/>
+                    <include reference="w2z-Ag-6f2"/>
+                    <include reference="4pK-zU-TV0"/>
+                    <include reference="Pk3-PY-FzI"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="C2n-PX-GAw"/>
+                    <exclude reference="LHX-Gn-nZs"/>
+                    <include reference="Ytj-Yf-D8P"/>
+                    <include reference="TYp-W3-Hyc"/>
+                    <include reference="dUJ-35-D11"/>
+                    <include reference="3cP-Cg-bmE"/>
+                    <include reference="GVo-CB-p0z"/>
+                    <include reference="eC6-kI-7Hi"/>
+                    <include reference="FEz-IF-Q3R"/>
+                    <include reference="vPl-vJ-RMG"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo.png" width="128" height="128"/>
+    </resources>
+</document>

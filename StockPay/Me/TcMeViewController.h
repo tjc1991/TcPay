@@ -8,6 +8,15 @@
 
 #import "TcBaseViewController.h"
 
-@interface TcMeViewController : TcBaseViewController
+@interface TcMeViewController : TcBaseViewController<UITableViewDelegate,UITableViewDataSource>
+
+
+@property (weak, nonatomic) IBOutlet UILabel *userPhoneLb;
+
+@property (weak, nonatomic) IBOutlet UITableView *tablewview;
+
+@property(nonatomic,strong) NSMutableArray *data;
+
+@property (weak, nonatomic) IBOutlet UILabel *userNickLb;
 
 @end

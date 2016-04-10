@@ -16,4 +16,10 @@
 - (void) RegisterName: (NSString *)name andPwd: (NSString *)pwd success:(successBlock)success
               failure:(failBlock)failure;
 
+- (void) ChangeNick: (NSString *)name andNick: (NSString *)pwd success:(successBlock)success
+              failure:(failBlock)failure;
+
+- (void) ChangePwd: (NSString *)name oldPwd: (NSString *)oldpwd orignPwd: (NSString *)pwd success:(successBlock)success
+           failure:(failBlock)failure;
+
 @end

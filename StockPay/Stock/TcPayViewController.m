@@ -35,7 +35,11 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.shuoMingLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, ScreenWidth, 30)];
+    UIImageView *zfbImView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"zfbsmall.png"]];
+    zfbImView.frame = CGRectMake((ScreenWidth-128)/2, 30, 128, 64);
+    [self.view addSubview:zfbImView];
+    
+    self.shuoMingLb = [[UILabel alloc] initWithFrame:CGRectMake(0, zfbImView.bottom+20, ScreenWidth, 30)];
     self.shuoMingLb.textAlignment = NSTextAlignmentCenter;
     self.shuoMingLb.text = @"说明";
     self.shuoMingLb.font = [UIFont fontWithName:@"" size:22];
@@ -43,14 +47,14 @@
     [self.view addSubview:self.shuoMingLb];
     
     //详细
-    self.noticeLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 140, ScreenWidth, 30)];
+    self.noticeLb = [[UILabel alloc] initWithFrame:CGRectMake(0, self.shuoMingLb.bottom+10, ScreenWidth, 30)];
     self.noticeLb.textAlignment = NSTextAlignmentCenter;
     self.noticeLb.text = @"注意获取最新推荐股票请支付1元人民币";
     self.noticeLb.textColor = [UIColor redColor];
     [self.view addSubview:self.noticeLb];
     
     //支付安钮
-    self.payBtn = [[UIButton alloc] initWithFrame:CGRectMake(30, 190, ScreenWidth-60, 50)];
+    self.payBtn = [[UIButton alloc] initWithFrame:CGRectMake(30, self.noticeLb.bottom+30, ScreenWidth-60, 50)];
     [self.payBtn setTitle:@"一键支付" forState:UIControlStateNormal];
     [self.payBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
@@ -103,9 +107,17 @@
         [self closeDlg];
         
         if ([self.pushMsgArray[0] integerValue] == 0) {
+            
+            //发送通知
+            [[NSNotificationCenter defaultCenter] postNotificationName:NOTOFY_FRESH_LIST object:self];
+            
             //跳转到推荐股票页
             self.tabBarController.selectedIndex = 0;
         }else{
+            
+            //发送通知
+            [[NSNotificationCenter defaultCenter] postNotificationName:NOTOFY_FRESH_LIST object:self];
+            
             //跳转到大盘行情页
             self.tabBarController.selectedIndex = 1;
         }

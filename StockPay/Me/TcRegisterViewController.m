@@ -106,7 +106,7 @@
     [self showDialog:@"注册中..."];
     //验证验证码
     [SMSSDK commitVerificationCode:self.codeTf.text phoneNumber:self.userPhoneTf.text zone:@"86" result:^(NSError *error){
-        if (error) {
+        if (!error) {
             //注册
             TcUserApi *userApi = [[TcUserApi alloc]init];
             [userApi RegisterName:self.userPhoneTf.text andPwd:self.userPwdTf.text success:^(NSURLSessionDataTask *task, id responseObject) {

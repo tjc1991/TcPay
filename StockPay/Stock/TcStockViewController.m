@@ -12,6 +12,7 @@
 #import "TcRecordApi.h"
 #import "TcHistoryApi.h"
 #import "TcPayViewController.h"
+#import "TcStockMsgViewController.h"
 
 @interface TcStockViewController ()
 {
@@ -38,6 +39,11 @@
     // Do any additional setup after loading the view from its nib.
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    //注册刷新通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refreshData) name:NOTOFY_FRESH_LIST object:nil];
+    
+    [self.tableview setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];
     
     self.tableview.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         
@@ -211,7 +217,7 @@
     }
     
     cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",[NSNumber numberWithInt:[self getRandomNumber:1 to:10]]]];
-    cell.textLabel.text  = @"股票测试数据";
+    cell.textLabel.text  = @"实时股票推荐";
     cell.detailTextLabel.text = [[self.data objectAtIndex:indexPath.row] objectForKey:@"createtime"];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
@@ -230,10 +236,14 @@
     //设置UITableview 选中返回时为不选中状态
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    NSUInteger rid = [[self.data[indexPath.row] objectForKey:@"rdid"] integerValue];
+    
     [self showDialog:@"一键查询中..."];
     TcHistoryApi *historyApi = [[TcHistoryApi alloc]init];
-    [historyApi fetchUserBuy:[[NSUserDefaults standardUserDefaults]objectForKey:NSUSERDEFAULT_USERID] :[[self.data[indexPath.row] objectForKey:@"rdid"] intValue] :^(NSURLSessionDataTask *task, id responseObject) {
+    [historyApi fetchUserBuy:[[NSUserDefaults standardUserDefaults]objectForKey:NSUSERDEFAULT_USERID] :rid :^(NSURLSessionDataTask *task, id responseObject) {
         //
+        
+        //NSLog(@"-->%@",responseObject);
         if (responseObject) {
             
             NSNumber *code = [responseObject objectForKey:@"code"];
@@ -241,15 +251,17 @@
             if ([code intValue] ==200) {
                 [self closeDlg];
                 //跳转到详情界面
-                
-                NSLog(@"ook");
+                TcStockMsgViewController *msgVcl = [[TcStockMsgViewController alloc]init];
+                msgVcl.rdid = rid;
+                [self.navigationController pushViewController:msgVcl animated:YES];
                 
             }else{
-                NSLog(@"eer");
                 //提示用户需要购买
                 [self MakeSuccessToast:@"购买才能查看"];
+                TcPayViewController *payVcl = [[TcPayViewController alloc]init];
+                payVcl.pushMsgArray = [NSArray arrayWithObjects:[NSNumber numberWithInteger:PUSH_TYPE_STOCK],[self.data[indexPath.row] objectForKey:@"rdid"],nil];
                 //跳转到支付页面
-                [self.navigationController pushViewController:[[TcPayViewController alloc]init] animated:YES];
+                [self.navigationController pushViewController:payVcl animated:YES];
                 
             }
         }
@@ -266,11 +278,24 @@
     
 }
 
+#pragma mark Notify
+
+- (void)refreshData{
+    
+    [self.tableview.header beginRefreshing];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)dealloc{
+    
+    //移除通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:NOTOFY_FRESH_LIST object:nil];
+}
+
 
 
 @end

@@ -37,7 +37,7 @@
 
 }
 
-//查询单条用户购买数据
+//查询单条用户购买数据,无详情
 -(void) fetchUserBuy: (NSString *)userid :(NSUInteger)rdid :(successBlock)success :(failBlock)fail{
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:2];
     [params setObject:userid forKey:@"username"];
@@ -45,6 +45,18 @@
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager POST:API_FETCH_USERBUY_URL parameters:params success:success failure:fail];
+}
+
+//查询单条用户购买数据,有详情
+-(void) fetchUserBuyDetails: (NSString *)userid :(NSUInteger)rdid :(successBlock)success :(failBlock)fail{
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:2];
+    [params setObject:userid forKey:@"username"];
+    [params setObject:[NSNumber numberWithUnsignedInteger:rdid] forKey:@"rid"];
+    
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager POST:API_FETCH_USER_DETAIL_RECORD_URL parameters:params success:success failure:fail];
+
 }
 
 

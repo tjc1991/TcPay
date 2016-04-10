@@ -64,13 +64,16 @@
         NSNumber *code = [responseObject objectForKey:@"code"];
         
         if ([code intValue] ==200) {
-            [self closeDlg];
+            [self MakeSuccessToast:@"登陆成功"];
             
             //保存用户Id
             NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
             //NSLog(@"-->%@",[responseObject objectForKey:@"data"]);
             
             [defaults setObject:[[responseObject objectForKey:@"data"] objectForKey:@"userid"] forKey:NSUSERDEFAULT_USERID];
+            
+            //保存用户昵称到本地
+            [defaults setObject:[[responseObject objectForKey:@"data"] objectForKey:@"nick"] forKey:NSUSERDEFAULT_USER_NICK];
             [defaults synchronize];
             
             self.view.window.rootViewController = [[MainViewController alloc]init];
@@ -80,7 +83,7 @@
             
         }else{
             
-            [self MakeToast:@"登录失败!"];
+            [self MakeToast:@"用户名或密码错误!"];
         }
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {

@@ -14,7 +14,7 @@
 //代码
 @property(nonatomic,copy) NSString *code;
 //时间
-@property(nonatomic,copy) NSNumber *createtime;
+@property(nonatomic,copy) NSString *createtime;
 //建议
 @property(nonatomic,copy) NSString *opinion;
 

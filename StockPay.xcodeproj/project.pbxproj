@@ -33,6 +33,25 @@
 		1846A8331CB946FE0004CA51 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A8291CB946FE0004CA51 /* 8.png */; };
 		1846A8341CB946FE0004CA51 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A82A1CB946FE0004CA51 /* 9.png */; };
 		1846A8351CB946FE0004CA51 /* 10.png in Resources */ = {isa = PBXBuildFile; fileRef = 1846A82B1CB946FE0004CA51 /* 10.png */; };
+		18EB1BFC1CB9C8C7002DF9BF /* zfb.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1BFB1CB9C8C7002DF9BF /* zfb.png */; };
+		18EB1BFE1CB9CBAB002DF9BF /* zfbsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1BFD1CB9CBAB002DF9BF /* zfbsmall.png */; };
+		18EB1C001CB9D32E002DF9BF /* dn.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1BFF1CB9D32E002DF9BF /* dn.png */; };
+		18EB1C041CB9D3E7002DF9BF /* jl.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1C031CB9D3E7002DF9BF /* jl.png */; };
+		18EB1C0C1CB9E3C5002DF9BF /* TcEditNickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1C0A1CB9E3C4002DF9BF /* TcEditNickViewController.m */; };
+		18EB1C0D1CB9E3C5002DF9BF /* TcEditNickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1C0B1CB9E3C5002DF9BF /* TcEditNickViewController.xib */; };
+		18EB1C111CB9E3FA002DF9BF /* TcBuyRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1C0F1CB9E3FA002DF9BF /* TcBuyRecordViewController.m */; };
+		18EB1C121CB9E3FA002DF9BF /* TcBuyRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1C101CB9E3FA002DF9BF /* TcBuyRecordViewController.xib */; };
+		18EB1C161CB9E418002DF9BF /* TcResetPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1C141CB9E418002DF9BF /* TcResetPwdViewController.m */; };
+		18EB1C171CB9E418002DF9BF /* TcResetPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1C151CB9E418002DF9BF /* TcResetPwdViewController.xib */; };
+		18EB1C1B1CB9E435002DF9BF /* TcAboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1C191CB9E435002DF9BF /* TcAboutMeViewController.m */; };
+		18EB1C1C1CB9E435002DF9BF /* TcAboutMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1C1A1CB9E435002DF9BF /* TcAboutMeViewController.xib */; };
+		18EB1C1E1CB9F479002DF9BF /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1C1D1CB9F479002DF9BF /* logo.png */; };
+		18EB1C201CB9FA2F002DF9BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1C1F1CB9FA2F002DF9BF /* Images.xcassets */; };
+		18EB1C241CBA2B03002DF9BF /* TcStockMsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EB1C221CBA2B03002DF9BF /* TcStockMsgViewController.m */; };
+		18EB1C271CBA3DEC002DF9BF /* editnick.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1C261CBA3DEC002DF9BF /* editnick.png */; };
+		18EB1C291CBA3F98002DF9BF /* resetpwd.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1C281CBA3F98002DF9BF /* resetpwd.png */; };
+		18EB1C2B1CBA3FE1002DF9BF /* aboutme.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1C2A1CBA3FE1002DF9BF /* aboutme.png */; };
+		18EB1C2D1CBA46EA002DF9BF /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EB1C2C1CBA46EA002DF9BF /* header.png */; };
 		18F34D7F1CAB548A0044ECC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D7E1CAB548A0044ECC9 /* Foundation.framework */; };
 		18F34D811CAB549B0044ECC9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D801CAB549B0044ECC9 /* CoreTelephony.framework */; };
 		18F34D851CAB54DF0044ECC9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F34D841CAB54DF0044ECC9 /* SystemConfiguration.framework */; };
@@ -173,6 +192,30 @@
 		1846A82A1CB946FE0004CA51 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		1846A82B1CB946FE0004CA51 /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.png; sourceTree = "<group>"; };
 		1865E1511CAA895A00A850BA /* StockPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18EB1BFB1CB9C8C7002DF9BF /* zfb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zfb.png; sourceTree = "<group>"; };
+		18EB1BFD1CB9CBAB002DF9BF /* zfbsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zfbsmall.png; sourceTree = "<group>"; };
+		18EB1BFF1CB9D32E002DF9BF /* dn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dn.png; sourceTree = "<group>"; };
+		18EB1C031CB9D3E7002DF9BF /* jl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jl.png; sourceTree = "<group>"; };
+		18EB1C091CB9E3C4002DF9BF /* TcEditNickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcEditNickViewController.h; sourceTree = "<group>"; };
+		18EB1C0A1CB9E3C4002DF9BF /* TcEditNickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcEditNickViewController.m; sourceTree = "<group>"; };
+		18EB1C0B1CB9E3C5002DF9BF /* TcEditNickViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TcEditNickViewController.xib; sourceTree = "<group>"; };
+		18EB1C0E1CB9E3FA002DF9BF /* TcBuyRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcBuyRecordViewController.h; sourceTree = "<group>"; };
+		18EB1C0F1CB9E3FA002DF9BF /* TcBuyRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcBuyRecordViewController.m; sourceTree = "<group>"; };
+		18EB1C101CB9E3FA002DF9BF /* TcBuyRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TcBuyRecordViewController.xib; sourceTree = "<group>"; };
+		18EB1C131CB9E418002DF9BF /* TcResetPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcResetPwdViewController.h; sourceTree = "<group>"; };
+		18EB1C141CB9E418002DF9BF /* TcResetPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcResetPwdViewController.m; sourceTree = "<group>"; };
+		18EB1C151CB9E418002DF9BF /* TcResetPwdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TcResetPwdViewController.xib; sourceTree = "<group>"; };
+		18EB1C181CB9E435002DF9BF /* TcAboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcAboutMeViewController.h; sourceTree = "<group>"; };
+		18EB1C191CB9E435002DF9BF /* TcAboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcAboutMeViewController.m; sourceTree = "<group>"; };
+		18EB1C1A1CB9E435002DF9BF /* TcAboutMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TcAboutMeViewController.xib; sourceTree = "<group>"; };
+		18EB1C1D1CB9F479002DF9BF /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		18EB1C1F1CB9FA2F002DF9BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18EB1C211CBA2B03002DF9BF /* TcStockMsgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcStockMsgViewController.h; sourceTree = "<group>"; };
+		18EB1C221CBA2B03002DF9BF /* TcStockMsgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TcStockMsgViewController.m; sourceTree = "<group>"; };
+		18EB1C261CBA3DEC002DF9BF /* editnick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editnick.png; sourceTree = "<group>"; };
+		18EB1C281CBA3F98002DF9BF /* resetpwd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resetpwd.png; sourceTree = "<group>"; };
+		18EB1C2A1CBA3FE1002DF9BF /* aboutme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aboutme.png; sourceTree = "<group>"; };
+		18EB1C2C1CBA46EA002DF9BF /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
 		18F34D7E1CAB548A0044ECC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18F34D801CAB549B0044ECC9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		18F34D821CAB54CF0044ECC9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -298,6 +341,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F34D7F1CAB548A0044ECC9 /* Foundation.framework in Frameworks */,
 				1846A7F81CB80A160004CA51 /* libAFNetworking.a in Frameworks */,
 				18F34E8E1CAE63E80044ECC9 /* QuartzCore.framework in Frameworks */,
 				18F34E891CAE35D50044ECC9 /* libicucore.tbd in Frameworks */,
@@ -315,7 +359,6 @@
 				18F34D881CAB6F310044ECC9 /* CoreLocation.framework in Frameworks */,
 				18F34D851CAB54DF0044ECC9 /* SystemConfiguration.framework in Frameworks */,
 				18F34D811CAB549B0044ECC9 /* CoreTelephony.framework in Frameworks */,
-				18F34D7F1CAB548A0044ECC9 /* Foundation.framework in Frameworks */,
 				18F34D971CABA6190044ECC9 /* BmobPay.framework in Frameworks */,
 				3FA4C312556AC8AC58F3A0B9 /* libPods.a in Frameworks */,
 			);
@@ -406,6 +449,7 @@
 				18F34DC51CABC7440044ECC9 /* ViewController.m */,
 				18F34DC11CABC7440044ECC9 /* LaunchScreen.storyboard */,
 				18F34DC31CABC7440044ECC9 /* Main.storyboard */,
+				18EB1C1F1CB9FA2F002DF9BF /* Images.xcassets */,
 				1865E1541CAA895A00A850BA /* Supporting Files */,
 			);
 			path = StockPay;
@@ -482,6 +526,18 @@
 				18F34E431CACCA070044ECC9 /* TcForgetPwdViewController.h */,
 				18F34E441CACCA070044ECC9 /* TcForgetPwdViewController.m */,
 				18F34E451CACCA070044ECC9 /* TcForgetPwdViewController.xib */,
+				18EB1C091CB9E3C4002DF9BF /* TcEditNickViewController.h */,
+				18EB1C0A1CB9E3C4002DF9BF /* TcEditNickViewController.m */,
+				18EB1C0B1CB9E3C5002DF9BF /* TcEditNickViewController.xib */,
+				18EB1C0E1CB9E3FA002DF9BF /* TcBuyRecordViewController.h */,
+				18EB1C0F1CB9E3FA002DF9BF /* TcBuyRecordViewController.m */,
+				18EB1C101CB9E3FA002DF9BF /* TcBuyRecordViewController.xib */,
+				18EB1C131CB9E418002DF9BF /* TcResetPwdViewController.h */,
+				18EB1C141CB9E418002DF9BF /* TcResetPwdViewController.m */,
+				18EB1C151CB9E418002DF9BF /* TcResetPwdViewController.xib */,
+				18EB1C181CB9E435002DF9BF /* TcAboutMeViewController.h */,
+				18EB1C191CB9E435002DF9BF /* TcAboutMeViewController.m */,
+				18EB1C1A1CB9E435002DF9BF /* TcAboutMeViewController.xib */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -494,6 +550,8 @@
 				18F34DDD1CABCDB10044ECC9 /* TcStockViewController.h */,
 				18F34DDE1CABCDB10044ECC9 /* TcStockViewController.m */,
 				18F34E481CACCC580044ECC9 /* TcStockViewController.xib */,
+				18EB1C211CBA2B03002DF9BF /* TcStockMsgViewController.h */,
+				18EB1C221CBA2B03002DF9BF /* TcStockMsgViewController.m */,
 			);
 			path = Stock;
 			sourceTree = "<group>";
@@ -524,6 +582,15 @@
 		18F34DE51CABD5B30044ECC9 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				18EB1C2C1CBA46EA002DF9BF /* header.png */,
+				18EB1C1D1CB9F479002DF9BF /* logo.png */,
+				18EB1C2A1CBA3FE1002DF9BF /* aboutme.png */,
+				18EB1C031CB9D3E7002DF9BF /* jl.png */,
+				18EB1C261CBA3DEC002DF9BF /* editnick.png */,
+				18EB1C281CBA3F98002DF9BF /* resetpwd.png */,
+				18EB1BFF1CB9D32E002DF9BF /* dn.png */,
+				18EB1BFD1CB9CBAB002DF9BF /* zfbsmall.png */,
+				18EB1BFB1CB9C8C7002DF9BF /* zfb.png */,
 				1846A8221CB946FE0004CA51 /* 1.png */,
 				1846A8231CB946FE0004CA51 /* 2.png */,
 				1846A8241CB946FE0004CA51 /* 3.png */,
@@ -669,7 +736,7 @@
 								enabled = 1;
 							};
 							com.apple.Push = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -709,6 +776,7 @@
 				18F34DF01CABD6130044ECC9 /* btn_login_normal@2x.png in Resources */,
 				18F34DC81CABC7440044ECC9 /* LaunchScreen.storyboard in Resources */,
 				18F34DF41CABD6130044ECC9 /* btn_register_normal@2x.png in Resources */,
+				18EB1C001CB9D32E002DF9BF /* dn.png in Resources */,
 				18F34E231CACC7AA0044ECC9 /* icon_home_pre@3x.png in Resources */,
 				18F34DF61CABD6130044ECC9 /* icon_backa@2x.png in Resources */,
 				1846A82D1CB946FE0004CA51 /* 2.png in Resources */,
@@ -720,24 +788,33 @@
 				18F34E701CAD12CF0044ECC9 /* icon_banner_close_selected@2x.png in Resources */,
 				18F34E5F1CAD12380044ECC9 /* icon_communicate_back.png in Resources */,
 				1846A80D1CB93E9C0004CA51 /* hot_ringtone.png in Resources */,
+				18EB1C2D1CBA46EA002DF9BF /* header.png in Resources */,
 				18F34E5B1CAD05650044ECC9 /* launchLSY.png in Resources */,
+				18EB1C2B1CBA3FE1002DF9BF /* aboutme.png in Resources */,
 				1846A82F1CB946FE0004CA51 /* 4.png in Resources */,
 				1846A8331CB946FE0004CA51 /* 8.png in Resources */,
 				18F34DF11CABD6130044ECC9 /* btn_login_pressed@2x.png in Resources */,
+				18EB1C121CB9E3FA002DF9BF /* TcBuyRecordViewController.xib in Resources */,
 				18F34E321CACC7AA0044ECC9 /* icon_username@2x.png in Resources */,
 				18F34E671CAD127B0044ECC9 /* icon_back_nor.png in Resources */,
 				18F34E7C1CAD134F0044ECC9 /* icon_close@2x.png in Resources */,
+				18EB1C1E1CB9F479002DF9BF /* logo.png in Resources */,
 				1846A8061CB8EFAE0004CA51 /* tbg.png in Resources */,
+				18EB1C271CBA3DEC002DF9BF /* editnick.png in Resources */,
+				18EB1C201CB9FA2F002DF9BF /* Images.xcassets in Resources */,
 				18F34E581CACEA060044ECC9 /* icon_pm_head@2x.png in Resources */,
+				18EB1C171CB9E418002DF9BF /* TcResetPwdViewController.xib in Resources */,
 				18F34DF81CABD6130044ECC9 /* login_background@2x.png in Resources */,
 				18F34DF51CABD6130044ECC9 /* btn_register_pressed@2x.png in Resources */,
 				18F34E2F1CACC7AA0044ECC9 /* icon_setting_pre@3x.png in Resources */,
 				18F34E421CACC9E90044ECC9 /* TcRegisterViewController.xib in Resources */,
+				18EB1C291CBA3F98002DF9BF /* resetpwd.png in Resources */,
 				18F34E4B1CACCC8C0044ECC9 /* TcGrailDetailViewController.xib in Resources */,
 				18F34DF91CABD6130044ECC9 /* start_bg@2x.png in Resources */,
 				18F34E311CACC7AA0044ECC9 /* icon_username_select@3x.png in Resources */,
 				18F34E7A1CAD134F0044ECC9 /* icon_close_pre@2x.png in Resources */,
 				1846A80A1CB913E10004CA51 /* tbl.png in Resources */,
+				18EB1C1C1CB9E435002DF9BF /* TcAboutMeViewController.xib in Resources */,
 				18F34E471CACCA070044ECC9 /* TcForgetPwdViewController.xib in Resources */,
 				18F34E2C1CACC7AA0044ECC9 /* icon_setting_nor@3x.png in Resources */,
 				18F34E531CACE8470044ECC9 /* icon_headimge_placeholder@3x.png in Resources */,
@@ -746,6 +823,7 @@
 				18F34DC71CABC7440044ECC9 /* Info.plist in Resources */,
 				1846A82E1CB946FE0004CA51 /* 3.png in Resources */,
 				18F34E681CAD127B0044ECC9 /* icon_back_nor@2x.png in Resources */,
+				18EB1C0D1CB9E3C5002DF9BF /* TcEditNickViewController.xib in Resources */,
 				1846A8321CB946FE0004CA51 /* 7.png in Resources */,
 				18F34E4D1CACE8110044ECC9 /* setting_head_bg.jpg in Resources */,
 				18F34E381CACC99A0044ECC9 /* TcMeViewController.xib in Resources */,
@@ -758,7 +836,9 @@
 				18F34E211CACC7AA0044ECC9 /* icon_home_pre.png in Resources */,
 				1846A80B1CB913E10004CA51 /* tbl@2x.png in Resources */,
 				18F34E2D1CACC7AA0044ECC9 /* icon_setting_pre.png in Resources */,
+				18EB1BFC1CB9C8C7002DF9BF /* zfb.png in Resources */,
 				1846A8351CB946FE0004CA51 /* 10.png in Resources */,
+				18EB1C041CB9D3E7002DF9BF /* jl.png in Resources */,
 				18F34E2B1CACC7AA0044ECC9 /* icon_setting_nor@2x.png in Resources */,
 				18F34DFB1CABD9830044ECC9 /* tittleNavigation@2x.png in Resources */,
 				18F34DF31CABD6130044ECC9 /* btn_red_pressed@2x.png in Resources */,
@@ -771,6 +851,7 @@
 				18F34E631CAD12420044ECC9 /* icon_communicate_back@3x.png in Resources */,
 				18F34E521CACE8470044ECC9 /* icon_headimge_placeholder@2x.png in Resources */,
 				18F34DCA1CABC7440044ECC9 /* Main.storyboard in Resources */,
+				18EB1BFE1CB9CBAB002DF9BF /* zfbsmall.png in Resources */,
 				18F34E571CACEA060044ECC9 /* icon_pm_head.png in Resources */,
 				18F34E241CACC7AA0044ECC9 /* icon_message_nor.png in Resources */,
 				18F34E1E1CACC7AA0044ECC9 /* icon_home_nor.png in Resources */,
@@ -845,19 +926,24 @@
 				18F34E411CACC9E90044ECC9 /* TcRegisterViewController.m in Sources */,
 				18F34DD21CABC8B00044ECC9 /* TcBaseViewController.m in Sources */,
 				18F34E011CABEA300044ECC9 /* MainViewController.m in Sources */,
+				18EB1C111CB9E3FA002DF9BF /* TcBuyRecordViewController.m in Sources */,
 				1846A7E61CB6B1610004CA51 /* TcUserApi.m in Sources */,
 				18F34DDC1CABCD700044ECC9 /* TcPayViewController.m in Sources */,
 				18F34DE01CABCDB10044ECC9 /* TcStockViewController.m in Sources */,
 				1846A7F31CB796BC0004CA51 /* TcStockModel.m in Sources */,
 				18F34DC91CABC7440044ECC9 /* main.m in Sources */,
 				1846A8031CB8D3970004CA51 /* UIViewExt.m in Sources */,
+				18EB1C1B1CB9E435002DF9BF /* TcAboutMeViewController.m in Sources */,
 				18F34DCB1CABC7440044ECC9 /* ViewController.m in Sources */,
 				1846A7E91CB78AB60004CA51 /* TcRecordApi.m in Sources */,
+				18EB1C0C1CB9E3C5002DF9BF /* TcEditNickViewController.m in Sources */,
 				1846A8001CB8D0600004CA51 /* TcHistoryCellTableViewCell.m in Sources */,
+				18EB1C241CBA2B03002DF9BF /* TcStockMsgViewController.m in Sources */,
 				1846A7F01CB796A60004CA51 /* TcHistoryModel.m in Sources */,
 				18F34DFE1CABD9B30044ECC9 /* BaseNavigationViewController.m in Sources */,
 				18F34E3C1CACC9D70044ECC9 /* TcLoginViewController.m in Sources */,
 				1846A7EC1CB795800004CA51 /* TcHistoryApi.m in Sources */,
+				18EB1C161CB9E418002DF9BF /* TcResetPwdViewController.m in Sources */,
 				18F34E371CACC99A0044ECC9 /* TcMeViewController.m in Sources */,
 				1846A7FC1CB8C7150004CA51 /* NSDate+TimeCategory.m in Sources */,
 				18F34D9F1CABB5FF0044ECC9 /* TcPushManager.m in Sources */,
@@ -909,6 +995,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -948,6 +1035,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -958,6 +1046,7 @@
 			baseConfigurationReference = 65D15FB8D41920BDCD2CD7C5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1002,6 +1091,7 @@
 			baseConfigurationReference = 3CDF118EF43A2392172AC721 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (

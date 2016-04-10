@@ -178,24 +178,35 @@
         //do something here...
     }else if (buttonIndex == 1)
     {
-        //do something here...
-        if (!self.payVcl) {
-            self.payVcl = [[TcPayViewController alloc]init];
+        //大盘行情免费,股票收费
+        if ([self.stockMsgArray[0] isEqualToString:@"0"]) {
+            //do something here...
+            if (!self.payVcl) {
+                self.payVcl = [[TcPayViewController alloc]init];
+                
+            }
             
+            [self.payVcl setPushMsgArray:self.stockMsgArray];
+            
+            //获取TabbarController对应的NavigationController
+            BaseNavigationViewController *tmpBaseNavVcl = [self.viewcontrollers objectAtIndex:self.selectedIndex];
+            
+            [tmpBaseNavVcl pushViewController:self.payVcl animated:YES];
+
+        }else{
+            //发送通知
+            [[NSNotificationCenter defaultCenter] postNotificationName:NOTOFY_FRESH_LIST object:self];
+            
+            //跳转到行情页面
+            self.selectedIndex = 1;
         }
-        
-        [self.payVcl setPushMsgArray:self.stockMsgArray];
-        
-        //获取TabbarController对应的NavigationController
-        BaseNavigationViewController *tmpBaseNavVcl = [self.viewcontrollers objectAtIndex:self.selectedIndex];
-        
-        [tmpBaseNavVcl pushViewController:self.payVcl animated:YES];
-        
     }
 }
 
 -(void)dealloc{
     NSLog(@"MainViewController-->dealloc");
+        //移除通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"tongzhi" object:nil];
 }
 
 
