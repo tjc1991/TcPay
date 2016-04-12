@@ -73,7 +73,7 @@
                 NSArray *tmpArray = [responseObject objectForKey:@"data"];
                 if (tmpArray && [tmpArray count]>0) {
                     
-                    //NSLog(@"%@",responseObject);
+                   // NSLog(@"%@",responseObject);
                     
                     if ([self.data count] == 0) {
                         //第一次添加数据
@@ -81,20 +81,27 @@
                         [self updateView];
                         
                     }else{
+                        //NSLog(@"data0-->%@",self.data[0]);
                         //添加最新数据
                         NSMutableArray *tmpArrays = [NSMutableArray arrayWithCapacity:10];
-                        for (NSDictionary *dic in tmpArray) {
-                            
+                        
+                        for (int i=0; i<[tmpArray count]; i++) {
+                            NSDictionary *dic = tmpArray[i];
                             NSInteger stamp = [NSDate cTimestampFromString:[dic objectForKey:@"createtime"] format:@"yyyy-MM-dd HH:mm:ss"];
                             
                             if (stamp > [NSDate cTimestampFromString:[self.data[0] objectForKey:@"createtime"] format:@"yyyy-MM-dd HH:mm:ss"]) {
                                 [tmpArrays addObject:dic];
                             }else{
-                                //退出循环
-                                [self MakeSuccessToast:@"没有最新数据了"];
-                                [self updateView];
-                                break;
+                                
                             }
+                        }
+                        
+                        //退出循环
+                        if ([tmpArrays count]>0) {
+                            [self.data insertObjects:tmpArrays atIndexes:[NSIndexSet indexSetWithIndex:0]];
+                            [self updateView];
+                        }else{
+                            [self MakeSuccessToast:@"没有最新数据了"];
                         }
                         
                     }
@@ -116,7 +123,11 @@
 //下拉,加载以前数据
 - (void)pullDown{
     
-    NSLog(@"page =%ld",page);
+    //避免第一次加载数据后下拉无法加载数据
+    if (page == 1 && [self.data count] == PAGE_COUNT) {
+        page++;
+    }
+    //NSLog(@"page =%ld",page);
     
     TcHistoryApi *hisToryApi = [[TcHistoryApi alloc]init];
     [hisToryApi fetchHistory:[[NSUserDefaults standardUserDefaults]objectForKey:NSUSERDEFAULT_USERID] :page :^(NSURLSessionDataTask *task, id responseObject) {
@@ -134,7 +145,7 @@
                     if ([self.data count] == 0) {
                         //第一次添加数据
                         
-                        if ([tmpArray count] >= 10) {
+                        if ([tmpArray count] >= PAGE_COUNT) {
                             //满一页数据
                             page++;
                         }
@@ -146,22 +157,27 @@
                         //添加最新数据
                         NSMutableArray *tmpArrays = [NSMutableArray arrayWithCapacity:1];
                         
-                        if ([tmpArray count] >= 10) {
+                        if ([tmpArray count] >= PAGE_COUNT) {
                             page++;
                         }
                         
-                        for (NSDictionary *dic in tmpArray) {
-                            
+                        for (int i=0; i<[tmpArray count]; i++) {
+                            NSDictionary *dic = tmpArray[i];
                             NSInteger stamp = [NSDate cTimestampFromString:[dic objectForKey:@"createtime"] format:@"yyyy-MM-dd HH:mm:ss"];
                             
-                            if (stamp > [NSDate cTimestampFromString:[[self.data lastObject] objectForKey:@"createtime"] format:@"yyyy-MM-dd HH:mm:ss"]) {
+                            if (stamp < [NSDate cTimestampFromString:[self.data[[self.data count]-1] objectForKey:@"createtime"] format:@"yyyy-MM-dd HH:mm:ss"]) {
                                 [tmpArrays addObject:dic];
                             }else{
-                                //退出循环
-                                [self MakeSuccessToast:@"没有最新数据了"];
-                                [self updateView];
-                                break;
+                                
                             }
+                        }
+                        
+                        //退出循环
+                        if ([tmpArrays count]>0) {
+                            [self.data addObjectsFromArray:tmpArrays];
+                            [self updateView];
+                        }else{
+                            [self MakeSuccessToast:@"没有最新数据了"];
                         }
                         
                     }

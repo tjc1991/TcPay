@@ -28,15 +28,30 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
+    tapGr.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tapGr];
+    
     self.nickTf.text = [[NSUserDefaults standardUserDefaults]objectForKey:NSUSERDEFAULT_USER_NICK];
 }
 
+-(void)viewTapped:(UITapGestureRecognizer*)tapGr
+{
+    [self.nickTf resignFirstResponder];
+    
+}
 
 - (IBAction)editNickAction:(id)sender {
     
     NSString *phone = self.nickTf.text;
     if ([phone isEqualToString:@""]) {
         [self MakeToast:@"请输入昵称"];
+        return;
+    }
+    
+    if ([phone isEqualToString:[[NSUserDefaults standardUserDefaults] objectForKey:NSUSERDEFAULT_USER_NICK]]) {
+        //
+        [self MakeToast:@"昵称没有改变,无需重新设置"];
         return;
     }
     

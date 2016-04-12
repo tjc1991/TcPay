@@ -68,7 +68,7 @@
 
 - (void)pay{
     
-    [self showDialog:@"支付中..."];
+    //[self showDialog:@"支付中..."];
 
     BmobPay* bPay = [[BmobPay alloc] init];
     //设置代理
@@ -84,7 +84,7 @@
         if (isSuccessful) {
         
         } else{
-            
+            [self MakeToast:@"订单生成失败"];
         }
     }];
 

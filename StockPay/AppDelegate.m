@@ -31,6 +31,8 @@
     
     //注册极光推送
     [[TcPushManager TcPushManagerInstance] registerTcPush:launchOptions];
+    
+    [application setApplicationIconBadgeNumber:0];
         
     //设置Bmob支付
     [BmobPaySDK registerWithAppKey:BMOB_APPKEY];
@@ -83,7 +85,7 @@ didReceiveRemoteNotification:(NSDictionary *)userInfo {
     //处理通知
     [[TcPushManager TcPushManagerInstance] handlePushMsg:application.applicationState didReceiveRemoteNotification:userInfo];
     
-    NSLog(@"-->收到通知:%@", userInfo);
+    //NSLog(@"-->收到通知:%@", userInfo);
     
     completionHandler(UIBackgroundFetchResultNewData);
 }

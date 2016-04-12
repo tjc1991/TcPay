@@ -104,13 +104,20 @@
     if ([[UIApplication sharedApplication] applicationState] == UIApplicationStateActive) {
         NSLog(@"acitve ");
         
+//        NSInteger num = [[UIApplication sharedApplication] applicationIconBadgeNumber];
+//        if (num > 0) {
+//            num--;
+//            [[UIApplication sharedApplication] setApplicationIconBadgeNumber:num];
+//        }else{
+//            [[UIApplication sharedApplication] setApplicationIconBadgeNumber:num];
+//        }
+        
         NSDictionary *userInfo = notice.userInfo[@"aps"];
         if (userInfo) {
             
             NSString *msg = [userInfo objectForKey:@"alert"];
             if (msg) {
-                NSArray *contentArray = [msg componentsSeparatedByString:@";"];
-                
+                NSArray *contentArray = [NSArray arrayWithObjects:notice.userInfo[@"type"],notice.userInfo[@"rdid"],msg, nil];
                 //保存临时推送信息
                 self.stockMsgArray = contentArray;
                 
@@ -140,8 +147,7 @@
             
             NSString *msg = [userInfo objectForKey:@"alert"];
             if (msg) {
-                NSArray *contentArray = [msg componentsSeparatedByString:@";"];
-                
+                NSArray *contentArray = [NSArray arrayWithObjects:notice.userInfo[@"type"],notice.userInfo[@"rdid"],msg, nil];
                 //保存临时推送信息
                 self.stockMsgArray = contentArray;
                 
@@ -170,8 +176,23 @@
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex;{
     
-    NSLog(@"btn click!");
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        
+//        //避免警告_BSMachError: (os/kern) invalid capability (20)
+//        NSInteger num = [[UIApplication sharedApplication] applicationIconBadgeNumber];
+//        if (num > 0) {
+//            num--;
+//            [[UIApplication sharedApplication] setApplicationIconBadgeNumber:num];
+//        }else{
+//            [[UIApplication sharedApplication] setApplicationIconBadgeNumber:num];
+//        }
+//    });
     
+//    dispatch_async(0.5, dispatch_get_main_queue(), ^{
+//        
+//            });
+    
+
     // the user clicked OK
     if (buttonIndex == 0)
     {

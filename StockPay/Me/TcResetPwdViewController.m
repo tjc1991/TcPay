@@ -28,7 +28,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    UITapGestureRecognizer *tapGr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
+    tapGr.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:tapGr];
+
 }
+
+-(void)viewTapped:(UITapGestureRecognizer*)tapGr
+{
+    [self.oldPwdTf resignFirstResponder];
+    [self.orignTf resignFirstResponder];
+}
+
 
 
 - (IBAction)resetPwd:(id)sender {

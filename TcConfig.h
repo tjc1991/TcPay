@@ -12,6 +12,9 @@
 #import <UIKit/UIKit.h>
 #import <AFNetworking/AFNetworking.h>
 
+
+//129fa3eea427093a9b1ba4de3dae2ad03606f4d6
+
 //HTTP块定义
 typedef void (^successBlock)(NSURLSessionDataTask *task, id responseObject);
 typedef void (^failBlock)(NSURLSessionDataTask *task, NSError *error);
@@ -99,6 +102,10 @@ static NSString* const NSUSERDEFAULT_USER_NICK = @"usernick";
 static NSInteger const PUSH_TYPE_STOCK = 0;
 
 static NSInteger const PUSH_TYPE_GRAIL = 1;
+
+//分页数据定义,与服务端保持一致
+static NSInteger const PAGE_COUNT = 10;
+
 
 
 

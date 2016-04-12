@@ -34,7 +34,7 @@ static BOOL isBackGroundActivateApplication = FALSE;
     // iOS8 下需要使用新的 API
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
         //可以添加自定义categories
-        [JPUSHService registerForRemoteNotificationTypes:(UIUserNotificationTypeBadge |
+        [JPUSHService registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
                                                           UIUserNotificationTypeSound |
                                                           UIUserNotificationTypeAlert)
                                               categories:nil];
@@ -47,6 +47,10 @@ static BOOL isBackGroundActivateApplication = FALSE;
     }
     
     [JPUSHService setupWithOption:launchOptions appKey:appKey channel:channel apsForProduction:isProduction];
+    
+    //清空BadgeView
+    [JPUSHService resetBadge];
+    
     
 }
 
@@ -66,6 +70,9 @@ static BOOL isBackGroundActivateApplication = FALSE;
 
     [JPUSHService handleRemoteNotification:userInfo];
     
+    //清空bADGEvIEW
+    //[JPUSHService resetBadge];
+        
     //发送通知
     //创建通知
     NSNotification *notification =[NSNotification notificationWithName:@"tongzhi" object:nil userInfo:userInfo];
